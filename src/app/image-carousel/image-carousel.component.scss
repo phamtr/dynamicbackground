@@ -1,0 +1,35 @@
+.image-tile {
+    background-size: 100%;
+    display: inline !important;
+    margin: 1vw; 
+    position: relative;
+    overflow: hidden;
+
+    &.large {
+      width:calc((100% / 3) - 2.01vw);
+      float: right;
+      height: calc((50vw) / 3 * 2 - 2.01vw);
+    }
+  
+    &.small {
+      width:calc((100% / 3) * 2 - 2.01vw);
+      float: left;
+      height: calc((50vw) / 3 - 2.01vw);
+    }
+    .image-tile-container{
+        display: inline-block !important;
+        height: 100%;
+        width: 200%;
+        div{
+            position: relative;
+            display: block;
+            height: 100%;
+            width: 50%;
+            float: left;
+            background-repeat: no-repeat!important;
+            background-size: cover!important;
+          }
+    }
+    
+  }
+  
